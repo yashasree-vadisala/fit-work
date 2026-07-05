@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink-900 dark:bg-ink-900 dark:text-paper transition-colors duration-300;
+}
+
+/* Visible keyboard focus everywhere, kept subtle but unmistakable */
+:focus-visible {
+  outline: 2px solid theme("colors.gold.DEFAULT");
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Subtle dot-grain texture used behind hero / panels, brand signature */
+.bg-grain-light {
+  background-image: radial-gradient(circle at 1px 1px, rgba(16, 24, 40, 0.07) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+.bg-grain-dark {
+  background-image: radial-gradient(circle at 1px 1px, rgba(245, 246, 248, 0.08) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+::selection {
+  background: theme("colors.gold.DEFAULT");
+  color: theme("colors.ink.900");
+}
+
+/* Respect reduced-motion preferences across all custom animations */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Thin, brand-colored scrollbar for the code/preview panels */
+.thin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: theme("colors.ink.300");
+  border-radius: 8px;
+}
+.dark .thin-scrollbar::-webkit-scrollbar-thumb {
+  background: theme("colors.ink.600");
+}
