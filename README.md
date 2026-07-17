@@ -102,3 +102,6 @@ If you want stronger reasoning and don't mind higher cost/latency, change
 
 Never put your Gemini API key in the frontend — it must only live in the
 backend's `.env`, since anything shipped to the browser is publicly visible.
+
+
+this is the process
