@@ -41,7 +41,7 @@ body {
   background: theme("colors.gold.DEFAULT");
   color: theme("colors.ink.900");
 }
-
+/**/
 /* Respect reduced-motion preferences across all custom animations */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
