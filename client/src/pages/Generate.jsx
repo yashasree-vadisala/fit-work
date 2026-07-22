@@ -8,6 +8,7 @@ import GeneratedResumePreview from "../components/results/GeneratedResumePreview
 import { generateAtsResume, downloadGeneratedResume } from "../api/client.js";
 
 export default function Generate() {
+  
   const [file, setFile] = useState(null);
   const [jobDescription, setJobDescription] = useState("");
   const [loading, setLoading] = useState(false);
