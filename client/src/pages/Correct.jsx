@@ -77,7 +77,6 @@ export default function Correct() {
             className="w-full resize-none rounded-xl border border-ink-200 bg-white p-4 font-body text-sm text-ink-900 outline-none placeholder:text-ink-300 focus:border-gold dark:border-ink-600 dark:bg-ink-800 dark:text-paper dark:placeholder:text-ink-500"
           />
         </div>
-
         <div className="md:col-span-2">
           {error && (
             <div className="mb-4 flex items-center gap-2 rounded-lg bg-coral/10 px-4 py-3 font-body text-sm text-coral-dark dark:text-coral-light">

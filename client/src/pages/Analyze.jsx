@@ -87,7 +87,6 @@ export default function Analyze() {
           </Button>
         </div>
       </form>
-
       <div className="mt-10">
         {loading && <Loader label="Comparing resume against job description…" />}
         {!loading && analysis && <AnalysisResults analysis={analysis} />}
