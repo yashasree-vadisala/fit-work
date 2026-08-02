@@ -14,6 +14,7 @@ export default function NotFound() {
         className="mt-6 rounded-full bg-ink-900 px-6 py-3 font-body text-sm font-semibold text-paper dark:bg-gold dark:text-ink-900"
       >
         Back to home
+        
       </Link>
     </PageShell>
   );
