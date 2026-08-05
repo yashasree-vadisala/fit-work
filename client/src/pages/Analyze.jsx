@@ -16,8 +16,10 @@ export default function Analyze() {
 
   const canSubmit = file && jobDescription.trim().length >= 30 && !loading;
 
+
   async function handleSubmit(e) {
     e.preventDefault();
+  
     if (!canSubmit) return;
     setLoading(true);
     setError("");

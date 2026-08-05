@@ -11,7 +11,6 @@ export default function Generate() {
   
   const [file, setFile] = useState(null);
   const [jobDescription, setJobDescription] = useState("");
-  
   const [loading, setLoading] = useState(false);
   const [downloading, setDownloading] = useState(false);
   const [error, setError] = useState("");

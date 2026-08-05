@@ -61,6 +61,7 @@ export default function Correct() {
           <FileDropzone file={file} onFileSelected={setFile} />
         </div>
 
+
         <div>
           <label
             htmlFor="jd-optional"
@@ -68,6 +69,7 @@ export default function Correct() {
           >
             Job description <span className="font-normal text-ink-400">(optional)</span>
           </label>
+
           <textarea
             id="jd-optional"
             value={jobDescription}
